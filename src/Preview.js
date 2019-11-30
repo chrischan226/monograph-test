@@ -14,7 +14,9 @@ function Preview(props) {
           <div className="preview-content" style = {{ 'height' : responsivePreviewHeight }}>
             <div className = 'emoji-ellipse'>
               <div className="preview-emoji">
-                {storage[emoji]}
+                <span className = 'emoji-picture'>
+                  {storage[emoji]}
+                </span>
               </div>
             </div>
             <div className="preview-feedback" style = {feedbackStyle}>
