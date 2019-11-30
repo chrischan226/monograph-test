@@ -1,29 +1,18 @@
 This take-home test was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Getting started
-- Clone the repo: `git clone git@github.com:monographhq/test-frontend.git`
-- Install dependencies: `yarn`
-- Make sure the app runs: `yarn start`
+```
+Clone the repo: `git clone https://github.com/chrischan226/monograph-test.git`
+Install dependencies: `yarn`
+Make sure the app runs: `yarn start`
+```
 
-## Frontend Test
+## Emoji Input
 
-### Dining review app
+[](https://puu.sh/EKoql/311488796a.png)
 
-Design Reference: [Figma File](https://www.figma.com/file/jjqRhIa54hOakjjAWkpbmC/Take-home-frontend-test?node-id=0%3A1)
+For the Emoji Input I decided to pursue a simplistic multi-button option, similiar to a 0-5 star rating system. Design wise, buttons are flexible with straightforward usability and scalable if more emoji expression is desired. 
 
-![Dining App](/app.png)
+[Add more Emojis](https://puu.sh/EKoLI/dd09893418.png)
 
-1. **Dynamic inputs** - The Preview section on the right has static placeholder text. Wire up the app so that anything typed in both the feedback and party inputs updates the preview on the right.
-2. **Refactor inputs** - Depending on how you wrote the first step, you may need to refactor the update method to only use a single method (instead of two) for updating each input. Make sure you're only passing a single method to both inputs. For example:
-    ```
-    update() {}
-    <input onChange={update}>
-    <input onChange={update}>
-    ```
-3. **Product decision** - We're a small team at Monograph so you may be asked to make recommendations based on a feature we're building. Code from scratch, modify a library, or use a best practice idea is often a decision we're confronted with. You'll be adding an emoji selector to the form on the left. In the [Figma File](https://www.figma.com/file/jjqRhIa54hOakjjAWkpbmC/Take-home-frontend-test?node-id=0%3A1) we've added a few ideas, but we'd like to see your thinking around the best way to implement a feature which allows a user to express their emotions after dining somewhere.
-
-    In your README doc, write a few sentences about why you might pick a certain direction.
-
-4. **Add emoji selector** - Now implement your idea in code and render it on the right in the Preview section.
-5. **Style preview card** - Based on the [Figma File](https://www.figma.com/file/jjqRhIa54hOakjjAWkpbmC/Take-home-frontend-test?node-id=0%3A1), add CSS styling to the Preview area. In Figma you can click the "Code" tab in the upper right to get the relevant CSS values for each element you click.
-6. **Responsive styling** - Now that your Preview is looking good, we need to make the app work for mobile users. We'd like the Preview section to be on top in mobile and everything to look similar to the Figma mockup. Don't worry about tablet styling for now, this is just for mobile.
+The tradeoffs of this approach would be a streamlined review process flow in exchange for reduced expression. I thought the sacrifice in the context of the page would be tolerable because whether these reviews were for internal or external presentation, by reducing the emoji options to a minimum, this approach allows the message of the review to be conveyed succinctly while also mitigating decision fatigue during the review process.
