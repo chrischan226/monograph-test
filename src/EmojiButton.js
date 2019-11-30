@@ -9,7 +9,9 @@ function EmojiButton(props) {
             <button className = 'emoji-button' 
                 onClick = {() => update({'target' : {name, value}})}
                 style = {selected ? {'background' : '#ecf6ff'} : {}}>
-                {emoji}
+                <span className = 'emoji-picture'>
+                    {emoji}
+                </span>
             </button>
         </div>
     )

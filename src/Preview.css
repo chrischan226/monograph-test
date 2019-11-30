@@ -22,15 +22,17 @@
     border-radius: 25rem;
     border: 8px solid #000;
     box-sizing: border-box;
-}
+  }
 
 .preview-emoji {
+  font-size: 40px;
+  line-height: 47px;
+  margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-size: 40px;
-  line-height: 47px;
 }
 
 .preview-feedback {
