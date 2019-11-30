@@ -21,3 +21,8 @@
   background: #F8FBFD;
   min-height: 80vh;
 }
+
+img.emoji {
+  height: 1em;
+  width: 1em;
+}

@@ -1,4 +1,56 @@
 .preview {
   width: 480px;
+  height: 288px;
   margin-top: 3rem;
+  position: relative;
+}
+
+.preview-content {
+  background: #FFFFFF;
+  height: 254px;
+  box-shadow: 0px 30px 80px rgba(134, 158, 174, 0.15);
+  position: relative;
+}
+
+.emoji-ellipse {
+    position: absolute;
+    top: 24px;
+    left: 7%;
+    width: 80px;
+    height: 80px;
+    border-radius: 25rem;
+    border: 8px solid #000;
+    box-sizing: border-box;
+}
+
+.preview-emoji {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.preview-feedback {
+  position: absolute;
+  top: 120px;
+  left: 7%;
+  font-size: 24px;
+  line-height: 28px;
+  width: 86%;
+}
+
+.party-size {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.preview-party {
+  position: absolute;
+  bottom: 32px;
+  left: 7%;
+  width: 335px;
+  font-size: 12px;
+  line-height: 14px;
 }

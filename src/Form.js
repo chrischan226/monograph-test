@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
+import EmojiButton from './EmojiButton';
 import './Form.css';
 
 function Form(props) {
+  const { party, feedback, update, emoji } = props;
 
   return (
     <div className="form">
@@ -9,25 +11,31 @@ function Form(props) {
       <textarea className="form-textarea"
         name="feedback"
         rows="4"
-        onChange={console.log("feedback changed")}
+        value = {feedback}
+        onChange={(e) => update(e)}
         placeholder="Let us know what we did well or could improve..."
       />
-
       <label className="form-label">How many in your party?</label>
       <input className="form-input"
         type="number"
         name="party"
         min="1"
-        onChange={console.log('party changed')}
+        value = {party}
+        onChange={(e) => update(e)}
         placeholder="2"
       />
-
       <label className="form-label">How was your meal?</label>
-      <div>
-
-        *** Add Emoji selector ***
-        {/* Your Code goes here */}
-
+      <div className = 'emoji-buttons'>
+        {props.storage.map((icon, index) => 
+          <EmojiButton
+            key = {index}
+            value = {index}
+            name = 'emoji'
+            selected = {index === emoji ? true : false}
+            update = {update}
+            emoji = {icon}
+          />
+        )}
       </div>
     </div>
   );
