@@ -37,3 +37,18 @@
 .emoji-buttons {
   width: 100%;
 }
+
+@media only screen and (max-width: 900px) { 
+  .form {
+    width: 90%;
+    margin-top: 0;
+  }
+
+  .form-textarea {
+    width: 92%;
+  }
+
+  .form .form-label {
+    margin-top: 2rem;
+  }
+}

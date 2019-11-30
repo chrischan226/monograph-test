@@ -7,6 +7,16 @@
   display: flex;
 }
 
+.app-top {
+  width: 100%;
+  background: #F7FAFC;
+}
+
+.app-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 .app-left {
   display: flex;
@@ -25,4 +35,10 @@
 img.emoji {
   height: 1em;
   width: 1em;
+}
+
+@media only screen and (max-width: 900px) { 
+  .app-main {
+    display: block;
+  }
 }

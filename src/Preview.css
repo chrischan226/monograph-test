@@ -1,8 +1,9 @@
 .preview {
   width: 480px;
-  height: 288px;
+  height: 100%;
   margin-top: 3rem;
   position: relative;
+  overflow-wrap: break-word;
 }
 
 .preview-content {
@@ -53,4 +54,15 @@
   width: 335px;
   font-size: 12px;
   line-height: 14px;
+}
+
+@media only screen and (max-width: 900px) { 
+  .preview {
+    width: 90%;
+    margin: auto;
+  }
+
+  .preview .form-label {
+    padding-top: 31px;
+  }
 }
