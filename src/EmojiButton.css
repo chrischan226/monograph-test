@@ -9,7 +9,7 @@
     -moz-osx-font-smoothing: grayscale;
     display: inline-block;
     font-size: 25px;
-    /* line-height: 30px; */
+    line-height: 30px;
     position: relative;
 }
 
